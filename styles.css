@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Dire Wolf', sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #000;
+    color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100vw;
+    height: 40vh;
+    opacity: 0.25;
+}
+
+.illuminate {
+    opacity: 1;
+    transition: 250ms opacity ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+
+    background-color: #FD7125;
+    background-image: linear-gradient(180deg, #000, #FD7125 25%, #B20001 90%);
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+span {
+    text-align: center;
+    font-size: 1.5rem;
+
+    background-color: #FD7125;
+    background-image: linear-gradient(0deg, #000, #FD7125 25%, #B20001 90%);
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+@media (max-width: 720px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    body {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 720px) {
+    main {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 1080px) {
+    main {
+        width: 55vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 40vw;
+    }
+}
